@@ -3,6 +3,7 @@ version: '3.1'
 services:
   nginx:
     image: loadbalancer:latest
+    container_name: loadbalancer
     volumes:
       - ~/ssl_certs:/letsencrypt
       - ~/ssl_certs/certs:/etc/letsencrypt
