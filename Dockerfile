@@ -1,3 +1,3 @@
-FROM debian:buster
+FROM nginx
 
 RUN apt-get update -y && apt-get install -y certbot
